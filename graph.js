@@ -74,9 +74,9 @@ class Graph {
     const row1 = vertex1.row;
     const column1 = vertex1.column;
 
-    return vertex2.edges.some(
-      (connectedVertex) => connectedVertex.row === row1 && connectedVertex.column === column1
-    );
+    return vertex2.edges.some((connectedVertex) => {
+      return connectedVertex.row === row1 && connectedVertex.column === column1;
+    });
   }
 
   /**
